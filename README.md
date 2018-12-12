@@ -30,8 +30,19 @@ pod "Bolt"
 
 ### Initialization
 
-```
+Объявить переменную класса **BLTPaymentManager** 
 
+```swift
+var paymentManager: BLTPaymentManager?
+```
+Инициализазия перемменной класса **BLTPaymentManager**
+
+```swift
+        do {
+            paymentManager = try BLTPaymentManager()
+        } catch {
+            // error handling
+        }
 ```
 
 
