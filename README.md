@@ -25,7 +25,6 @@ pod "Bolt"
 <details>
 <summary>Manually</summary>
 </br>
-
 - Drag the Bolt folder into your project.
 
 </details>
