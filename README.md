@@ -1,8 +1,4 @@
-<p align="left">
-  <img src="https://bolt.com/images/icons/logos/bolt-small.svg" title="Bolt">
-</p>
-
-# Bolt
+# Bolt ![Bolt](https://bolt.com/images/icons/logos/bolt-small.svg)
 
 [![Version](https://img.shields.io/cocoapods/v/Bolt.svg?style=flat)](http://cocoapods.org/pods/Bolt)
 [![License](https://img.shields.io/cocoapods/l/Bolt.svg?style=flat)](http://cocoapods.org/pods/Bolt)
