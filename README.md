@@ -25,7 +25,7 @@ pod "Bolt"
 <details>
 <summary>Manually</summary>
 </br>
-Drag the Bolt folder into your project.
+Clone the repo and drag the Bolt folder into your project.
 
 </details>
 
