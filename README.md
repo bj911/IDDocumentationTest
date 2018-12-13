@@ -36,6 +36,7 @@ These values can be configured programatically in a custom configuration instanc
 
 <details>
 <summary>Programatically</summary>
+        
 ```swift
         let serverEnvironment: BLTServerEnvironment = .production // or .sandbox
         let publishableKey = "YOUR PUBLISHABLE KEY"
