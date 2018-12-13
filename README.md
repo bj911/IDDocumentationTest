@@ -75,6 +75,33 @@ let paymentViewConfiguration = BLTPaymentViewConfiguration()
 
 </details>
 
+Then create **BLTPaymentViewControlelr**
+
+**BLTPaymentViewControlelr** handles the presentation and lifecycle of a Bolt payment form.
+
+```swift
+do {
+    let orderToken = "The token from order creation"
+    
+    var payerInfo = BLTPayerInfo() // Optional information about the payer used to pre-fill the payment form.
+    payerInfo.firstName = "John"
+    payerInfo.lastName = "Doe"
+    payerInfo.email = "email@example.com"
+    payerInfo.phone = "1112223333"
+    payerInfo.addressLine1 = "123 Baker Street"
+    payerInfo.city = "San Francisco"
+    payerInfo.state = "California"
+    payerInfo.zip = "94550"
+    payerInfo.country = "US"
+    
+    let paymentViewController = try BLTPaymentViewController(paymentConfiguration: paymentConfiguration, orderToken: orderToken, payerInfo: payerInfo)
+    
+    // display paymentViewController
+} catch {
+    // handle error
+}
+```
+
 ### Delegate
 
 
