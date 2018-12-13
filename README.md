@@ -31,7 +31,7 @@ Clone the repo and drag the Bolt folder into your project.
 
 ## Usage
 
-First of all BLTPaymentManager should be created.
+First of all **BLTPaymentViewConfiguration** should be created.
 
 **BLTPaymentViewConfiguration** Specifies merchant-specific configuration options for the payment view.
 
