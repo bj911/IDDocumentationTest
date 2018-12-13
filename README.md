@@ -11,15 +11,10 @@ This SDK enables paying with credit cards within an iOS app.
 
 ## Installation
 
-Bolt is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 <details>
 <summary>CocoaPods</summary>
 </br>
-<p>To integrate SwifterSwift into your Xcode project using <a href="http://cocoapods.org">CocoaPods</a>, specify it in your <code>Podfile</code>:</p>
+<p>To integrate Bolt into your Xcode project using <a href="http://cocoapods.org">CocoaPods</a>, specify it in your <code>Podfile</code>:</p>
 
 ```ruby
 pod "Bolt"
