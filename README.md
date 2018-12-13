@@ -28,11 +28,43 @@ pod "Bolt"
 
 ## Usage
 
-### Create Payment View Configuration
+### Payment View Configuration
 
-Specifies merchant-specific configuration options for the payment view.
+Specifies merchant-specific configuration options for the payment view. You can create 
 
-#### 1. Programatically
+These values can be configured programatically in a custom configuration instance, or by including the keys in the app's info.plist and creating a configuration instance through the default initializer.
+
+<details>
+<summary>Programatically</summary>
+</br>
+<p></p>
+
+```swift
+        let serverEnvironment: BLTServerEnvironment = .production // or .sandbox
+        let publishableKey = "YOUR PUBLISHABLE KEY"
+        let paymentViewConfiguration = BLTPaymentViewConfiguration(publishableKey: publishableKey, serverEnvironment: serverEnvironment)
+```
+</details>
+
+<details>
+<summary>Info.plist</summary>
+</br>
+<p>Include the keys BLTPublishableKey and BLTServerEnvironmentKey in the app's info.plist.</p>
+
+
+</br>
+<p>  and creating a configuration instance through the default initializer. For BLTServerEnvironmentKey, a value of 0 specifies the sandbox server environment, a value of 1 specifies the production environment. Throws an exception if a default initializer is creating but the BLTPublishableKey isn't present in the Info.plist. If BLTServerEnvironmentKey isn't present, production is assumed.</p>
+</br>
+<p>1. Right-click info.plist, and choose Open As Source Code.</p>
+
+
+</details>
+
+```swift
+        let serverEnvironment: BLTServerEnvironment = .production // or .sandbox
+        let publishableKey = "YOUR PUBLISHABLE KEY"
+        let paymentViewConfiguration = BLTPaymentViewConfiguration(publishableKey: publishableKey, serverEnvironment: serverEnvironment)
+```
 
 ### Initialization
 
