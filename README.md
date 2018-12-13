@@ -28,6 +28,12 @@ pod "Bolt"
 
 ## Usage
 
+### Create Payment View Configuration
+
+Specifies merchant-specific configuration options for the payment view.
+
+#### 1. Programatically
+
 ### Initialization
 
 Объявить переменную класса **BLTPaymentManager** 
