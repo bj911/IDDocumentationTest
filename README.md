@@ -38,16 +38,16 @@ These values can be configured programatically in a custom configuration instanc
 <summary>Programatically</summary>
         
 ```swift
-        let serverEnvironment: BLTServerEnvironment = .production // or .sandbox
-        let publishableKey = "YOUR PUBLISHABLE KEY"
-        let paymentViewConfiguration = BLTPaymentViewConfiguration(publishableKey: publishableKey, serverEnvironment: serverEnvironment)
+ let serverEnvironment: BLTServerEnvironment = .production // or .sandbox
+ let publishableKey = "YOUR PUBLISHABLE KEY"
+ let paymentViewConfiguration = BLTPaymentViewConfiguration(publishableKey: publishableKey, serverEnvironment: serverEnvironment)
 ```
 </details>
 
 <details>
 <summary>Info.plist</summary>
 </br>
-<p>Include the keys BLTPublishableKey and BLTServerEnvironmentKey in the app's info.plist.</p>
+<p>Include the keys <b>BLTPublishableKey</b> and <b>BLTServerEnvironmentKey</b> in the app's info.plist.</p>
 
 1. Right-click **info.plist**, and choose **Open As Source Code**.
 2. Copy and paste the following XML snippet into the body of your file (`<dict>...</dict>`).
