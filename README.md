@@ -77,6 +77,13 @@ let paymentViewConfiguration = BLTPaymentViewConfiguration()
 
 
 
+
+
+
+
+
+
+
 Then create and display **BLTPaymentViewController**.
 
 **BLTPaymentViewController** handles the presentation and lifecycle of a Bolt payment form.
