@@ -50,7 +50,7 @@ These values can be configured programatically in a custom configuration instanc
 <p>Include the keys BLTPublishableKey and BLTServerEnvironmentKey in the app's info.plist.</p>
 
 1. Right-click **info.plist**, and choose **Open As Source Code**.
-2. Copy and paste the following XML snippet into the body of your file (`<dict>...</dict>`).
+2. Copy and paste the following XML snippet into the body of your file (`XML <dict>...</dict>`).
 
 ```XML
 <key>BLTPublishableKey</key>
