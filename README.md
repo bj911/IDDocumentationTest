@@ -31,9 +31,9 @@ Clone the repo and drag the Bolt folder into your project.
 
 ## Usage
 
-### 1. Create BLTPaymentViewConfiguration
+First of all BLTPaymentManager should be created.
 
-Specifies merchant-specific configuration options for the payment view.
+**BLTPaymentViewConfiguration** Specifies merchant-specific configuration options for the payment view.
 
 These values can be configured programatically in a custom configuration initializer, or by including the keys in the app's info.plist and creating a configuration instance through the default initializer.
 
@@ -75,24 +75,7 @@ let paymentViewConfiguration = BLTPaymentViewConfiguration()
 
 </details>
 
-### 2. Initialize BLTPaymentViewController
-
-Объявить переменную класса **BLTPaymentManager** 
-
-### 
-
-```swift
-var paymentManager: BLTPaymentManager?
-```
-Инициализазия перемменной класса **BLTPaymentManager**
-
-```swift
-        do {
-            paymentManager = try BLTPaymentManager()
-        } catch {
-            // error handling
-        }
-```
+### Delegate
 
 
 ## Example 
