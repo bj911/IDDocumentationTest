@@ -38,9 +38,9 @@ These values can be configured programatically in a custom configuration instanc
 <summary>Programatically</summary>
         
 ```swift
- let serverEnvironment: BLTServerEnvironment = .production // or .sandbox
- let publishableKey = "YOUR PUBLISHABLE KEY"
- let paymentViewConfiguration = BLTPaymentViewConfiguration(publishableKey: publishableKey, serverEnvironment: serverEnvironment)
+let serverEnvironment: BLTServerEnvironment = .production // or .sandbox
+let publishableKey = "YOUR PUBLISHABLE KEY"
+let paymentViewConfiguration = BLTPaymentViewConfiguration(publishableKey: publishableKey, serverEnvironment: serverEnvironment)
 ```
 </details>
 
@@ -67,7 +67,7 @@ If **BLTServerEnvironmentKey** isn't present, production is assumed.
 3. Create a configuration instance through the default initializer. Throws an exception if a default initializer is creating but the BLTPublishableKey isn't present in the Info.plist.
 
 ```swift
-        let paymentViewConfiguration = BLTPaymentViewConfiguration()
+let paymentViewConfiguration = BLTPaymentViewConfiguration()
 ```
 </details>
 
