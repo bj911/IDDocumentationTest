@@ -49,9 +49,21 @@ These values can be configured programatically in a custom configuration instanc
 </br>
 <p>Include the keys BLTPublishableKey and BLTServerEnvironmentKey in the app's info.plist.</p>
 
+1. Right-click **info.plist**, and choose **Open As Source Code**.
+2. Copy and paste the following XML snippet into the body of your file (`<dict>...</dict>`).
+
+```XML
+<key>BLTPublishableKey</key>
+<string>Your Publishable Key</string>
+<key>BLTServerEnvironment</key>
+<integer>0</integer>
+```
+
+For BLTServerEnvironmentKey, a value of 0 specifies the sandbox server environment, a value of 1 specifies the production environment.
+If BLTServerEnvironmentKey isn't present, production is assumed.
 
 </br>
-<p>  and creating a configuration instance through the default initializer. For BLTServerEnvironmentKey, a value of 0 specifies the sandbox server environment, a value of 1 specifies the production environment. Throws an exception if a default initializer is creating but the BLTPublishableKey isn't present in the Info.plist. If BLTServerEnvironmentKey isn't present, production is assumed.</p>
+<p>  and creating a configuration instance through the default initializer.  Throws an exception if a default initializer is creating but the BLTPublishableKey isn't present in the Info.plist. </p>
 </br>
 <p>1. Right-click info.plist, and choose Open As Source Code.</p>
 
