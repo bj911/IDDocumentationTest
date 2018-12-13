@@ -76,7 +76,7 @@ let paymentViewConfiguration = BLTPaymentViewConfiguration()
 </details>
 
 
-Then create and dispaly **BLTPaymentViewController**
+Then create and display **BLTPaymentViewController**.
 
 **BLTPaymentViewController** handles the presentation and lifecycle of a Bolt payment form.
 
@@ -96,6 +96,7 @@ do {
     payerInfo.country = "US"
     
     let paymentViewController = try BLTPaymentViewController(paymentConfiguration: paymentConfiguration, orderToken: orderToken, payerInfo: payerInfo)
+    paymentViewController.delegate = self
     
     // display paymentViewController
 } catch {
@@ -103,11 +104,12 @@ do {
 }
 ```
 
-You can create **BLTPaymentViewController** configure checkout info separately
+You can create **BLTPaymentViewController** and configure checkout info separately.
 
 ```swift
 do {    
     let paymentViewController = try BLTPaymentViewController(paymentConfiguration: paymentConfiguration)
+    paymentViewController.delegate = self
     
     let orderToken = "The token from order creation"
     
@@ -132,6 +134,36 @@ do {
 
 ### Delegate
 
+The methods in BLTPaymentViewControllerDelegate aid in integration of the payment view into third party applications. Using these methods a merchant application can determine when various events in the payment view's lifecycle have occurred.
+
+```swift
+public protocol BLTPaymentViewControllerDelegate: class {
+    
+    /**
+     Called when a payment has succeeded.
+     
+     - Parameter paymentViewController: The payment view invoking the delegate method.
+     - Parameter transaction: The payment transaction responce object.
+     - Parameter transaction: The payment transaction responce json object.
+     */
+    func paymentViewControllerPaymentDidSucceed(_ paymentViewController: BLTPaymentViewController, with transaction: BLTTransactionResponse?, transactionJsonBlob: String)
+    
+    /**
+     Called when the payer dismisses the payment view from the UI without completing a successful payment.
+     
+     - Parameter paymentViewController: The payment view invoking the delegate method.
+    */
+    func paymentViewControllerDidClose(_ paymentViewController: BLTPaymentViewController)
+    
+    /**
+     Called when the payment view encounters either an HTTP error or a JavaScript exception.
+     
+     - Parameter paymentViewController: The payment view invoking the delegate method.
+     - Parameter error: The error encountered. Will be in the BLTErrorDomain and will either be an HTTP code or BLTErrorDomainJavascriptErrorCode in the case of a JavaScript exception.
+     */
+    func paymentViewController(_ paymentViewController: BLTPaymentViewController, didEncounter error: Error)
+}
+```
 
 ## Example 
 
