@@ -72,17 +72,11 @@ let paymentViewConfiguration = BLTPaymentViewConfiguration(publishableKey: publi
 ```swift
 let paymentViewConfiguration = BLTPaymentViewConfiguration()
 ```
+
 </br>
 </details>
 
-
-
-
-
-
-
-
-
+#
 
 Then create and display **BLTPaymentViewController**.
 
