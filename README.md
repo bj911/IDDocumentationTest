@@ -32,7 +32,7 @@ pod "Bolt"
 
 Specifies merchant-specific configuration options for the payment view.
 
-These values can be configured programatically in a custom configuration instance, or by including the keys in the app's info.plist and creating a configuration instance through the default initializer.
+These values can be configured programatically in a custom configuration initializer, or by including the keys in the app's info.plist and creating a configuration instance through the default initializer.
 
 <details>
 <summary>Programatically</summary>
