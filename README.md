@@ -44,6 +44,7 @@ let paymentViewConfiguration = BLTPaymentViewConfiguration(publishableKey: publi
 ```
 </details>
 
+
 <details>
 <summary>Info.plist</summary>
 </br>
@@ -59,10 +60,9 @@ let paymentViewConfiguration = BLTPaymentViewConfiguration(publishableKey: publi
 <integer>0</integer>
 ```
 
-For **BLTServerEnvironmentKey**, a value of **0** specifies the **sandbox** server environment, a value of **1** specifies the **production** environment.
+- For **BLTServerEnvironmentKey**, a value of **0** specifies the **sandbox** server environment, a value of **1** specifies the **production** environment.
+- If **BLTServerEnvironmentKey** isn't present, production is assumed.
 
-If **BLTServerEnvironmentKey** isn't present, production is assumed.
-</br>
 
 3. Create a configuration instance through the default initializer. Throws an exception if a default initializer is creating but the BLTPublishableKey isn't present in the Info.plist.
 
