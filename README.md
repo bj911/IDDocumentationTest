@@ -28,7 +28,7 @@ pod "Bolt"
 
 ## Usage
 
-### 1. Create Payment View Configuration
+### 1. Create BLTPaymentViewConfiguration
 
 Specifies merchant-specific configuration options for the payment view.
 
@@ -64,7 +64,7 @@ let paymentViewConfiguration = BLTPaymentViewConfiguration(publishableKey: publi
 <integer>0</integer>
 ```
 
-3. Create a configuration instance through the default initializer. Throws an exception if a default initializer is creating but the BLTPublishableKey isn't present in the Info.plist.
+3. Create a configuration instance through the default initializer. Throws an exception if a default initializer is creating but the **BLTPublishableKey** isn't present in the Info.plist.
 
 ```swift
 let paymentViewConfiguration = BLTPaymentViewConfiguration()
@@ -72,9 +72,11 @@ let paymentViewConfiguration = BLTPaymentViewConfiguration()
 
 </details>
 
-### Initialization
+### 2. Initialize BLTPaymentViewController
 
 Объявить переменную класса **BLTPaymentManager** 
+
+### 
 
 ```swift
 var paymentManager: BLTPaymentManager?
@@ -96,4 +98,4 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## License
 
-Bolt is available under the MIT license. See the LICENSE file for more info.
+Bolt is released under the MIT license. See [LICENSE](https://github.com/BoltApp/bolt-ios/blob/master/LICENSE) for more information.
