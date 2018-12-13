@@ -28,17 +28,14 @@ pod "Bolt"
 
 ## Usage
 
-### Payment View Configuration
+### 1. Create Payment View Configuration
 
-Specifies merchant-specific configuration options for the payment view. You can create 
+Specifies merchant-specific configuration options for the payment view.
 
 These values can be configured programatically in a custom configuration instance, or by including the keys in the app's info.plist and creating a configuration instance through the default initializer.
 
 <details>
 <summary>Programatically</summary>
-</br>
-<p></p>
-
 ```swift
         let serverEnvironment: BLTServerEnvironment = .production // or .sandbox
         let publishableKey = "YOUR PUBLISHABLE KEY"
