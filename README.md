@@ -36,7 +36,7 @@ These values can be configured programatically in a custom configuration instanc
 
 <details>
 <summary>Programatically</summary>
-        
+</br>
 ```swift
 let serverEnvironment: BLTServerEnvironment = .production // or .sandbox
 let publishableKey = "YOUR PUBLISHABLE KEY"
@@ -50,6 +50,9 @@ let paymentViewConfiguration = BLTPaymentViewConfiguration(publishableKey: publi
 </br>
 <p>Include the keys <b>BLTPublishableKey</b> and <b>BLTServerEnvironmentKey</b> in the app's info.plist.</p>
 
+- For **BLTServerEnvironmentKey**, a value of **0** specifies the **sandbox** server environment, a value of **1** specifies the **production** environment.
+- If **BLTServerEnvironmentKey** isn't present, production is assumed.
+
 1. Right-click **info.plist**, and choose **Open As Source Code**.
 2. Copy and paste the following XML snippet into the body of your file (`<dict>...</dict>`).
 
@@ -60,15 +63,12 @@ let paymentViewConfiguration = BLTPaymentViewConfiguration(publishableKey: publi
 <integer>0</integer>
 ```
 
-- For **BLTServerEnvironmentKey**, a value of **0** specifies the **sandbox** server environment, a value of **1** specifies the **production** environment.
-- If **BLTServerEnvironmentKey** isn't present, production is assumed.
-
-
 3. Create a configuration instance through the default initializer. Throws an exception if a default initializer is creating but the BLTPublishableKey isn't present in the Info.plist.
 
 ```swift
 let paymentViewConfiguration = BLTPaymentViewConfiguration()
 ```
+
 </details>
 
 ### Initialization
