@@ -26,6 +26,13 @@ pod "Bolt"
 ```
 </details>
 
+
+<details>
+<summary>Manually</summary>
+</br>
+
+</details>
+
 ## Usage
 
 ### 1. Create BLTPaymentViewConfiguration
