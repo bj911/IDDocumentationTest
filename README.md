@@ -1,9 +1,16 @@
+<p align="left">
+  <img src="https://bolt.com/images/icons/logos/bolt-small.svg" title="Bolt">
+</p>
+
 # Bolt
 
 [![Version](https://img.shields.io/cocoapods/v/Bolt.svg?style=flat)](http://cocoapods.org/pods/Bolt)
 [![License](https://img.shields.io/cocoapods/l/Bolt.svg?style=flat)](http://cocoapods.org/pods/Bolt)
 
-This SDK enables paying with credit cards within an iOS app.
+Bolt SDK is  written in swift solution for integration Bolt checkout experience into your app.
+
+Bolt SDK позволяет создать и отобразить представление для проведения оплаты
+ This SDK enables paying with credit cards within an iOS app.
 
 ## Requirements:
 - **iOS** 10.0+
