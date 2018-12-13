@@ -50,7 +50,7 @@ let paymentViewConfiguration = BLTPaymentViewConfiguration(publishableKey: publi
 
 
 <details>
-<summary>Info.plist</summary>
+<summary>Including the keys in the app's Info.plist</summary>
 </br>
 <p>Include the keys <b>BLTPublishableKey</b> and <b>BLTServerEnvironmentKey</b> in the app's info.plist.</p>
 
